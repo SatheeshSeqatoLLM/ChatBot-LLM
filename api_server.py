@@ -13,7 +13,7 @@ class Prompt(BaseModel):
     text: str
     model: str = "gemma:2b"
 
-# --- API Endpoint ---
+# --- API Endpoint  ----
 @app.post("/chat-bot")
 def generate(prompt: Prompt):
     """
